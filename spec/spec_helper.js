@@ -8,8 +8,6 @@ import 'pivotal-js-react-test-helpers';
 
 let globals;
 
-console.log('in test helpers');
-
 beforeAll(() => {
   globals = {
     $,
