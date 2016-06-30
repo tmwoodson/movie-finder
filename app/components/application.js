@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
+import MovieList from './movie-list';
 
 import movies from '../fake-data';
 
@@ -21,36 +22,15 @@ const WithData = (Wrapped) => {
   };
 };
 
-const Movie = (movie) => {
-  const {Title} = movie;
-
-  return (
-    <div className="movie">
-      <div className="movie-title">{Title}</div>
-    </div>
-  );
-};
-
-const MovieList = ({movies}) => {
-  const movieNodes = movies.map((movie, i) => {
-    return (
-      <Movie {...movie} key={i} />
-    );
-  });
-
-  return (
-    <div className="movie-list">
-      {movieNodes}
-    </div>
-  );
-};
-
 
 class Application extends React.Component {
 
   render() {
     return (
-      <MovieList movies={this.props.movies} />
+      <div className="movie-finder">
+        <div className="heading">In Theaters Nearby</div>
+        <MovieList movies={this.props.movies} />
+      </div>
     );
   };
 };
