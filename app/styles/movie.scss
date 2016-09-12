@@ -1,0 +1,16 @@
+
+.movie-wrapper {
+  display: flex;
+  justify-content: center;
+
+  .movie {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #83AF9B;
+    border-radius: 3px;
+    padding: 8px;
+    margin-bottom: 8px;
+    flex-direction: column;
+  }
+}

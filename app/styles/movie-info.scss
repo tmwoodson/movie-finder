@@ -1,0 +1,21 @@
+.movie-info {
+  display: flex;
+  .movie-poster {
+    img {
+      width: 120px;
+    }
+  }
+  .movie-info-part {
+    padding: 7px;
+  }
+  .additional-movie-info {
+    display: flex;
+    flex-direction: column;
+    .theater-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  }
+}

@@ -35,8 +35,6 @@ const testConfig = {
   }
 };
 
-
-
 gulp.task('jasmine', () => {
   return gulp.src(['./spec/**/*_spec.js'])
     .pipe(webpack(testConfig))
