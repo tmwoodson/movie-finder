@@ -1,6 +1,9 @@
 To run the webserver:
 
 ```npm install```
+
+then
+
 ```gulp webserver```
 
 and navigate to http://localhost:8080
