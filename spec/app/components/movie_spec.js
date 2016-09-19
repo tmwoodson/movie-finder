@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 describe('A movie', () => {
 
+
   const movie = {
       Title: "Deuce Bigelow: Male Gigolo",
       Year:"2001",
@@ -11,7 +12,8 @@ describe('A movie', () => {
       Country: "Dumbland",
       Poster:"lowest_common_denominator.jpg",
       Metascore: "0",
-      imdbRating: "1.4"
+      imdbRating: "1.4",
+      Theaters: []
   };
 
   beforeEach(() => {
@@ -51,5 +53,6 @@ describe('A movie', () => {
     const imgSrc = $('.movie img').attr('src');
     expect(imgSrc).toEqual(movie.Poster);
   });
+
 });
 

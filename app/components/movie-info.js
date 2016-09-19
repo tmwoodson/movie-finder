@@ -1,7 +1,9 @@
 import React from 'react';
 
+import TheaterSummary from './theater-summary';
+
 const MovieInfo = (movie) => {
-  const {Plot, Poster} = movie;
+  const {Plot, Poster, Theaters} = movie;
   return (
     <div className="movie-info">
       <div className="movie-poster movie-info-part">
@@ -11,9 +13,7 @@ const MovieInfo = (movie) => {
         <div className="movie-plot">
           {Plot}
         </div>
-        <div className="theater-info">
-          <div>[Theater info here]</div>
-        </div>
+        <TheaterSummary theaters={Theaters}/>
       </div>
     </div>
   );

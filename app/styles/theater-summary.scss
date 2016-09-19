@@ -1,0 +1,22 @@
+.theater-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+
+  .theater-name {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 175px;
+  }
+
+  .theater-showtime {
+    font-size: 13px;
+    margin-right: 8px;
+    color: #6b615f;
+    font-style: italic;
+    font-weight: 700;
+  }
+}

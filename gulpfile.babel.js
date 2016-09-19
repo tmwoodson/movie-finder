@@ -7,6 +7,8 @@ import sass from 'gulp-sass';
 import plumber from 'gulp-plumber';
 import rename from 'gulp-rename';
 import connect from 'gulp-connect';
+import runSequence from 'run-sequence';
+import {spawn} from 'child_process';
 
 import webpack from 'webpack-stream';
 import webpackConfig from './webpack.config';
@@ -62,7 +64,15 @@ gulp.task('build-js', () => {
     .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('build', ['build-js', 'sass', 'copy-html']);
+gulp.task('copy-config', () => {
+  const configFilename = process.env.NODE_ENV === 'production' ? 'production' : 'development';
+  const configPath = `./config/${configFilename}.js`;
+  return gulp.src(configPath)
+    .pipe(rename('config.js'))
+    .pipe(gulp.dest('./config/'));
+});
+
+gulp.task('build', ['copy-config','build-js', 'sass', 'copy-html']);
 
 gulp.task('watch', (callback) => {
   process.env.WEBPACK_WATCH = true;
@@ -74,6 +84,18 @@ gulp.task('watch', (callback) => {
 
 gulp.task('webserver', ['watch', 'build'], () => {
   connect.server({root: 'dist'});
+});
+
+gulp.task('push', (callback) => {
+  spawn('cf', ['push'], {stdio: 'inherit', env: process.env}).once('close', callback);
+});
+
+gulp.task('deploy', (done) => {
+  process.env.NODE_ENV = 'production';
+  runSequence('build', 'push', () => {
+    process.env.NODE_ENV = 'development';
+    done();
+  });
 });
 
 

@@ -1,8 +1,11 @@
 import 'es6-promise';
 import fetch from 'isomorphic-fetch';
 
+import config from '../../config/config';
 
-const url = 'http://localhost:5000/movies';
+const url = `${config.BASE_API_URL}/movies`;
+
+console.log('using this url:', url);
 
 module.exports.fetchMovies = () => {
   return fetch(url).then((response) => {

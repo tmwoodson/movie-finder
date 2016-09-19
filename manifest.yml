@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: react-starter
+  - name: movie-finder
     buildpack: staticfile_buildpack
-    path: public
+    path: dist
     memory: 64MB

@@ -20,8 +20,9 @@ module.exports = [
     "imdbID":"tt0166924",
     "Type":"movie",
     "Response":"True",
-    "Theaters": {
-      "Roxie Theater": {
+    "Theaters": [
+      {
+        "Name": "Roxie Theater",
         "Info": "3117 16th Street, San Francisco, CA - (415) 863-1087",
         "Showtimes": {
           "0": ['7:00&ltrm;', '9:00pm&ltrm;'],
@@ -30,7 +31,8 @@ module.exports = [
           "3": ['7pm', '9:15pm', '11:00&ltrm;']
         }
       },
-      "Alamo Drafthouse -- New Mission": {
+      {
+        "Name": "Alamo Drafthouse -- New Mission",
         "Info": "2550 Mission Street, San Francisco, CA - (415) 549-5959",
         "Showtimes": {
           "0": ['7pm', '9:15pm', '11:00&ltrm;'],
@@ -39,7 +41,7 @@ module.exports = [
           "3": ['7:00&ltrm;', '9:00pm&ltrm;']
         }
       }
-    }
+    ]
   },
   {
     "Title":"Aguirre, the Wrath of God",
@@ -62,8 +64,9 @@ module.exports = [
     "imdbID":"tt0068182",
     "Type":"movie",
     "Response":"True",
-    "Theaters": {
-      "Alamo Drafthouse Cinema -- New Mission": {
+    "Theaters": [
+      {
+        "Name": "Alamo Drafthouse Cinema -- New Mission",
         "Info": "2550 Mission Street, San Francisco, CA - (415) 549-5959",
         "Showtimes": {
           "0": ['7pm', '9:15pm', '11:00&ltrm;'],
@@ -72,7 +75,7 @@ module.exports = [
           "3": ['7:00&ltrm;', '9:00pm&ltrm;']
         }
       }
-    }
+    ]
   },
   {
     "Title":"Blood Simple.",
@@ -139,8 +142,9 @@ module.exports = [
     "imdbID":"tt0056869",
     "Type":"movie",
     "Response":"True",
-    "Theaters": {
-      "Alamo Drafthouse -- New Mission": {
+    "Theaters": [
+      {
+        "Name": "Alamo Drafthouse -- New Mission",
         "Info": "2550 Mission Street, San Francisco, CA - (415) 549-5959",
         "Showtimes": {
           "0": ['7pm', '9:15pm', '11:00&ltrm;'],
@@ -149,7 +153,7 @@ module.exports = [
           "3": ['7:00&ltrm;', '9:00pm&ltrm;']
         }
       }
-    }
+    ]
   },
   {
     "Title":"The Neon Demon",
