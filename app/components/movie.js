@@ -5,6 +5,10 @@ import MovieInfo from './movie-info';
 
 const Movie = (movie) => {
 
+  if (!movie.Title) {
+    return null;
+  }
+
   const movieHeader = MovieHeader(movie);
   const movieInfo = MovieInfo(movie);
 

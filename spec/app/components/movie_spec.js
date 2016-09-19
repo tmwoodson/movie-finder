@@ -10,7 +10,6 @@ describe('A movie', () => {
       Director: "Donald Trump",
       Plot: "Deuce Bigelow is a male prostitute. Dick jokes, fart jokes, and other hilarious hijinx ensue.",
       Country: "Dumbland",
-      Poster:"lowest_common_denominator.jpg",
       Metascore: "0",
       imdbRating: "1.4",
       Theaters: []
@@ -47,11 +46,6 @@ describe('A movie', () => {
 
   it('shows the metacritic rating', () => {
     expect('.movie').toContainText(movie.Metascore);
-  });
-
-  it('shows the movie poster', () => {
-    const imgSrc = $('.movie img').attr('src');
-    expect(imgSrc).toEqual(movie.Poster);
   });
 
 });

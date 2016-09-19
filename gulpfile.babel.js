@@ -39,6 +39,7 @@ const testConfig = {
 
 gulp.task('jasmine', () => {
   return gulp.src(['./spec/**/*_spec.js'])
+    .pipe(plumber())
     .pipe(webpack(testConfig))
     .pipe(jasmineBrowser.specRunner())
     .pipe(jasmineBrowser.server({whenReady: plugin.whenReady}));

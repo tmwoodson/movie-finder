@@ -3,13 +3,17 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 10px;
+  padding-top: 15px;
 
   .theater-name {
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
-    width: 175px;
+    margin-right: 20px;
+
+    //text-decoration: underline;
+    //color: #9a612d;
+    //cursor: pointer;
   }
 
   .theater-showtime {
