@@ -22,6 +22,7 @@ module.exports = [
     "Theaters": [
       {
         "Name": "Roxie Theater",
+        "Url": "https://www.google.com/movies?near=san+francisco,+ca,+usa&tid=roxie",
         "Info": "3117 16th Street, San Francisco, CA - (415) 863-1087",
         "Showtimes": {
           "0": ['7:00&ltrm;', '9:00pm&ltrm;'],
@@ -32,6 +33,7 @@ module.exports = [
       },
       {
         "Name": "Alamo Drafthouse -- New Mission",
+        "Url": "https://www.google.com/movies?near=san+francisco,+ca,+usa&tid=alamo",
         "Info": "2550 Mission Street, San Francisco, CA - (415) 549-5959",
         "Showtimes": {
           "0": ['7pm', '9:15pm', '11:00&ltrm;'],
@@ -65,6 +67,7 @@ module.exports = [
     "Theaters": [
       {
         "Name": "Alamo Drafthouse Cinema -- New Mission",
+        "Url": "https://www.google.com/movies?near=san+francisco,+ca,+usa&tid=alamo",
         "Info": "2550 Mission Street, San Francisco, CA - (415) 549-5959",
         "Showtimes": {
           "0": ['7pm', '9:15pm', '11:00&ltrm;'],
@@ -142,6 +145,7 @@ module.exports = [
     "Theaters": [
       {
         "Name": "Alamo Drafthouse -- New Mission",
+        "Url": "https://www.google.com/movies?near=san+francisco,+ca,+usa&tid=alamo",
         "Info": "2550 Mission Street, San Francisco, CA - (415) 549-5959",
         "Showtimes": {
           "0": ['7pm', '9:15pm', '11:00&ltrm;'],
@@ -200,6 +204,7 @@ module.exports = [
     "Theaters": [
       {
         "Name": "Alamo Drafthouse Cinema -- New Mission",
+        "Url": "https://www.google.com/movies?near=san+francisco,+ca,+usa&tid=alamo",
         "Info": "2550 Mission Street, San Francisco, CA - (415) 549-5959",
         "Showtimes": {
           "0": ['7pm', '9:15pm', '11:00&ltrm;']

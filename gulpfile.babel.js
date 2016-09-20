@@ -91,12 +91,12 @@ gulp.task('push', (callback) => {
   spawn('cf', ['push'], {stdio: 'inherit', env: process.env}).once('close', callback);
 });
 
-gulp.task('deploy', (done) => {
+gulp.task('deploy', (callback) => {
   process.env.NODE_ENV = 'production';
   runSequence('build', 'push', () => {
     process.env.NODE_ENV = 'development';
-    done();
-  });
+    callback();
+  },);
 });
 
 
