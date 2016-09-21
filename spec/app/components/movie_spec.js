@@ -5,14 +5,14 @@ describe('A movie', () => {
 
 
   const movie = {
-      Title: "Deuce Bigelow: Male Gigolo",
-      Year:"2001",
-      Director: "Donald Trump",
-      Plot: "Deuce Bigelow is a male prostitute. Dick jokes, fart jokes, and other hilarious hijinx ensue.",
-      Country: "Dumbland",
-      Metascore: "0",
-      imdbRating: "1.4",
-      Theaters: []
+    Title: "Deuce Bigelow: Male Gigolo",
+    Year:"2001",
+    Director: "Donald Trump",
+    Plot: "Deuce Bigelow is a male prostitute. Dick jokes, fart jokes, and other hilarious hijinx ensue.",
+    Country: "Dumbland",
+    Metascore: "0",
+    imdbRating: "1.4",
+    Theaters: []
   };
 
   beforeEach(() => {
@@ -38,14 +38,6 @@ describe('A movie', () => {
 
   it('shows the country', () => {
     expect('.movie').toContainText(movie.Country);
-  });
-
-  it('shows the imdb rating', () => {
-    expect('.movie').toContainText(movie.imdbRating);
-  });
-
-  it('shows the metacritic rating', () => {
-    expect('.movie').toContainText(movie.Metascore);
   });
 
 });

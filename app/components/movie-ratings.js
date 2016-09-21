@@ -1,14 +1,17 @@
 import React from 'react';
 
 const MovieRatings = (movie) => {
-  const {imdbRating, Metascore} = movie;
+  const {imdbRating, imdbUrl, Metascore} = movie;
+
+  const imdbNode = imdbUrl ? 
+                   (<a className="rating-name"  target="_blank" href={imdbUrl}>IMDB:</a>) 
+                   : 
+                   (<div className="rating-name">IMDB:</div>);
 
   return (
     <div className="movie-ratings">
       <div className="rating-wrapper">
-        <div className="rating-name">
-          IMDB:
-        </div>
+        {imdbNode}
         <div className="rating-number">
           {imdbRating}
         </div>

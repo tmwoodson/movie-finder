@@ -17,6 +17,7 @@ module.exports = [
     "imdbRating":"8.0",
     "imdbVotes":"233,424",
     "imdbID":"tt0166924",
+    "imdbUrl":"http://www.imdb.com/title/tt0166924/",
     "Type":"movie",
     "Response":"True",
     "Theaters": [
@@ -62,6 +63,7 @@ module.exports = [
     "imdbRating":"8.0",
     "imdbVotes":"37,812",
     "imdbID":"tt0068182",
+    "imdbUrl":"http://www.imdb.com/title/tt0068182/",
     "Type":"movie",
     "Response":"True",
     "Theaters": [
@@ -96,6 +98,7 @@ module.exports = [
     "imdbRating":"7.7",
     "imdbVotes":"66,630",
     "imdbID":"tt0086979",
+    "imdbUrl":"http://www.imdb.com/title/tt0086979/",
     "Type":"movie",
     "Response":"True"
   },
@@ -118,6 +121,7 @@ module.exports = [
     "imdbRating":"8.4",
     "imdbVotes":"351,374",
     "imdbID":"tt0364569",
+    "imdbUrl":"http://www.imdb.com/title/tt0364569/",
     "Type":"movie",
     "Response":"True"
   },
@@ -140,6 +144,7 @@ module.exports = [
     "imdbRating":"7.7",
     "imdbVotes":"127,416",
     "imdbID":"tt0056869",
+    "imdbUrl":"http://www.imdb.com/title/tt0056869/",
     "Type":"movie",
     "Response":"True",
     "Theaters": [
@@ -173,6 +178,7 @@ module.exports = [
     "imdbRating":"7.0",
     "imdbVotes":"720",
     "imdbID":"tt1974419",
+    "imdbUrl":"http://www.imdb.com/title/tt1974419/",
     "Type":"movie",
     "Response":"True"
   },
@@ -195,12 +201,15 @@ module.exports = [
     "imdbRating":"6.8",
     "imdbVotes":"21,548",
     "imdbID":"tt2084989",
+    "imdbUrl":"http://www.imdb.com/title/tt2084989/",
     "Type":"movie",
     "Response":"True"
   },
   {
     "Title":"",
     "Year":"notayear",
+    "imdbID":"N/A",
+    "imdbUrl":"",
     "Theaters": [
       {
         "Name": "Alamo Drafthouse Cinema -- New Mission",
