@@ -8,17 +8,14 @@ class MovieList extends React.Component {
     expandedMovieIndex: null,
   }
 
-  componentWillMount() {
-    // Without this, props get lost somehow.
-    // But it seems like a hack and it should be fixed.
-    this.setState({movies: this.props.movies});
-  }
-
   render() {
+    const {movies} = this.props;
 
-    const {movies} = this.state;
+    if (!movies) {
+      console.trace('something is wrong');
+    }
 
-    const movieNodes = this.state.movies.map((movie, i) => {
+    const movieNodes = movies.map((movie, i) => {
 
       const onDetailClick = () => {
         if (this.state.expandedMovieIndex === null) {
