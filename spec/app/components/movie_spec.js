@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 describe('A movie', () => {
 
+  let onDetailClick;
 
   const movie = {
     Title: "Deuce Bigelow: Male Gigolo",
@@ -15,9 +16,12 @@ describe('A movie', () => {
     Theaters: []
   };
 
+
   beforeEach(() => {
+    onDetailClick = jasmine.createSpy('onDetailClick');
+
     const Movie = require('../../../app/components/movie').default;
-    ReactDOM.render(<Movie {...movie} />, root);
+    ReactDOM.render(<Movie movie={movie} onDetailClick={onDetailClick}/>, root);
   });
 
   it('shows the title', () => {
@@ -38,6 +42,18 @@ describe('A movie', () => {
 
   it('shows the country', () => {
     expect('.movie').toContainText(movie.Country);
+  });
+
+  describe('clicking for more information', () => {
+
+    beforeEach(() => {
+      $('.movie-details-button').click();
+    });
+
+    it('calls the onDetailClick callback', () => {
+      expect(onDetailClick).toHaveBeenCalled();
+    });
+
   });
 
 });

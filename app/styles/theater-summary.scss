@@ -1,3 +1,5 @@
+@import 'colors';
+
 .theater-summary {
   display: flex;
   flex-direction: column;
@@ -15,6 +17,6 @@
   .theater-showtime {
     font-size: 13px;
     margin-right: 8px;
-    color: #6b615f;
+    color: $secondary-text-color;
   }
 }

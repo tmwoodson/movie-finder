@@ -4,15 +4,25 @@
 @import 'movie-info';
 @import 'movie-ratings';
 @import 'theater-summary';
+@import 'colors';
 
 * {
   font-family: 'Open Sans', 'sans-serif';
 }
 
-a {
+a, .link {
   text-decoration: underline;
-  color: #80107f;
+  color: $link-color;
   cursor: pointer;
+}
+
+a:hover, .link:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+a:visited, .link:visited {
+  color: $visited-link-color;
 }
 
 .movie-finder {
