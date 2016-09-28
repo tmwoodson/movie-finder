@@ -1,13 +1,16 @@
+@import 'colors';
+
 @import 'movie';
 @import 'movie-header';
 @import 'movie-identifiers';
 @import 'movie-info';
 @import 'movie-ratings';
+@import 'movie-trailer';
 @import 'theater-summary';
-@import 'colors';
 
 * {
   font-family: 'Open Sans', 'sans-serif';
+  transition: transform 2s;
 }
 
 a, .link {

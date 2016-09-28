@@ -18,6 +18,7 @@ module.exports = [
     "imdbVotes":"233,424",
     "imdbID":"tt0166924",
     "imdbUrl":"http://www.imdb.com/title/tt0166924/",
+    "TrailerUrl":"http://www.youtube.com/watch?v=XQ5Q0CHQ0EU",
     "Type":"movie",
     "Response":"True",
     "Theaters": [
@@ -64,6 +65,7 @@ module.exports = [
     "imdbVotes":"37,812",
     "imdbID":"tt0068182",
     "imdbUrl":"http://www.imdb.com/title/tt0068182/",
+    "TrailerUrl":"http://www.youtube.com/watch?v=ojwxrzmAkdA",
     "Type":"movie",
     "Response":"True",
     "Theaters": [
@@ -99,6 +101,7 @@ module.exports = [
     "imdbVotes":"66,630",
     "imdbID":"tt0086979",
     "imdbUrl":"http://www.imdb.com/title/tt0086979/",
+    "TrailerUrl":"https://www.youtube.com/watch?v=vI0ov8zzfQA",
     "Type":"movie",
     "Response":"True"
   },
@@ -122,6 +125,7 @@ module.exports = [
     "imdbVotes":"351,374",
     "imdbID":"tt0364569",
     "imdbUrl":"http://www.imdb.com/title/tt0364569/",
+    "TrailerUrl":"http://www.youtube.com/watch?v=fSz2StbI5IA",
     "Type":"movie",
     "Response":"True"
   },
@@ -145,6 +149,7 @@ module.exports = [
     "imdbVotes":"127,416",
     "imdbID":"tt0056869",
     "imdbUrl":"http://www.imdb.com/title/tt0056869/",
+    "TrailerUrl":"http://www.youtube.com/watch?v=LrN_U830_Gc",
     "Type":"movie",
     "Response":"True",
     "Theaters": [
@@ -179,6 +184,7 @@ module.exports = [
     "imdbVotes":"720",
     "imdbID":"tt1974419",
     "imdbUrl":"http://www.imdb.com/title/tt1974419/",
+    "TrailerUrl":"http://www.youtube.com/watch?v=cipOTUO0CmU",
     "Type":"movie",
     "Response":"True"
   },
@@ -202,6 +208,7 @@ module.exports = [
     "imdbVotes":"21,548",
     "imdbID":"tt2084989",
     "imdbUrl":"http://www.imdb.com/title/tt2084989/",
+    "TrailerUrl":"https://www.youtube.com/watch?v=5U9KmAlrEXU",
     "Type":"movie",
     "Response":"True"
   },

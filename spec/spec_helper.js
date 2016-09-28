@@ -5,6 +5,7 @@ import $ from 'jquery';
 
 import 'jasmine_dom_matchers';
 import 'pivotal-js-react-test-helpers';
+import 'spy-on-render';
 
 let globals;
 

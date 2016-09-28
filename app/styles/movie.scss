@@ -14,4 +14,10 @@
     margin-bottom: 8px;
     flex-direction: column;
   }
+
+  &.expanded {
+    .movie {
+      width: 80%;
+    }
+  }
 }
