@@ -20,7 +20,7 @@ describe('A movie', () => {
 
   beforeEach(() => {
     MovieTrailer = require('../../../app/components/movie-trailer').default;
-    spyOnRender(MovieTrailer);
+    spyOnRender(MovieTrailer).and.callThrough();
   });
 
 
@@ -81,6 +81,22 @@ describe('A movie', () => {
 
       it('shows the trailer', () => {
         expect(MovieTrailer).toHaveBeenRenderedWithProps(jasmine.objectContaining({TrailerUrl: movie.TrailerUrl}));
+      });
+    });
+
+    describe('when there is a promotional link instead of a movie trailer', () => {
+      beforeEach(() => {
+        onDetailClick = jasmine.createSpy('onDetailClick');
+
+        movie.TrailerUrl = 'http://www.youtube.com/trailer/some-movie';
+
+        const Movie = require('../../../app/components/movie').default;
+        ReactDOM.render(<Movie movie={movie} onDetailClick={onDetailClick} expanded={true}/>, root);
+      });
+
+      it('gives a link to the page with the trailer on it', () => {
+        expect('.trailer').toContainText('Watch the trailer');
+        expect('.trailer a').toHaveAttr('href', movie.TrailerUrl);
       });
     });
 
