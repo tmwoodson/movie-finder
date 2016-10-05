@@ -20,14 +20,4 @@ describe('LocationInput', () => {
       expect(whenReady).toHaveBeenCalled();
     });
   });
-
-  // it('shows the movie titles', () => {
-  //   expect(root).toContainText('Mulholland Drive');
-  //   expect(root).toContainText('The Birds');
-  // });
-
-  // it('does not display movies that are missing a title', () => {
-  //   expect(root).not.toContainText('notayear');
-  // });
-
 });

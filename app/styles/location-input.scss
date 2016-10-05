@@ -1,0 +1,23 @@
+.zipcode-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      height: 30px;
+      width: 250px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .button {
+      margin-top: 15px;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 4px;
+      color: white;
+      background-color: #4f9a93;
+    }
+}

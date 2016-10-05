@@ -30,7 +30,10 @@ class LocationInput extends React.Component {
     return (
       <div className="zipcode-input-wrapper">
         <div className="zipcode-input input">
-          <input value={this.state.zipcode} onChange={onZipcodeChange} />
+          <input
+            value={this.state.zipcode}
+            onChange={onZipcodeChange}
+            placeholder="Enter your zipcode." />
         </div>
         <div className="submit-button button" onClick={onSubmit}>
           Find movies near me
