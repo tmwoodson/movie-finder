@@ -7,8 +7,9 @@ const url = `${config.BASE_API_URL}/movies`;
 
 console.log('using this url:', url);
 
-module.exports.fetchMovies = () => {
-  return fetch(url).then((response) => {
+module.exports.fetchMovies = (zipcode) => {
+  const newUrl = url + '?zip=' + zipcode;
+  return fetch(newUrl).then((response) => {
       if(response.status !== 200) {
         throw new Error('no bueno');
       }
